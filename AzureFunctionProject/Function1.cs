@@ -12,7 +12,12 @@ using DllProject;
 namespace AzureFunctionProject
 {
     public static class Function1
-    {
+    {/// <summary>
+    /// 
+    /// </summary>
+    /// <param name="req"></param>
+    /// <param name="log"></param>
+    /// <returns></returns>
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
